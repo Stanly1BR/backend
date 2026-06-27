@@ -1,0 +1,1 @@
+{"version":3,"file":"diagnostico.controller.d.ts","sourceRoot":"","sources":["../../src/controllers/diagnostico.controller.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,MAAM,EAA+B,MAAM,SAAS,CAAC;AAK9D,qBAAa,qBAAqB;IACvB,MAAM,EAAE,MAAM,CAAC;IACtB,OAAO,CAAC,kBAAkB,CAAqB;;IAQ/C,OAAO,CAAC,gBAAgB;YAQV,kBAAkB;YAsBlB,kBAAkB;YAUlB,iBAAiB;YAWjB,iBAAiB;YAuBjB,iBAAiB;CAqBlC"}

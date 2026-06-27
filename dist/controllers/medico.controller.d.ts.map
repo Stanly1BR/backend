@@ -1,0 +1,1 @@
+{"version":3,"file":"medico.controller.d.ts","sourceRoot":"","sources":["../../src/controllers/medico.controller.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,MAAM,EAA+B,MAAM,SAAS,CAAC;AAK9D,qBAAa,gBAAgB;IAClB,MAAM,EAAE,MAAM,CAAC;IACtB,OAAO,CAAC,aAAa,CAAgB;;IAQrC,OAAO,CAAC,gBAAgB;YAQV,aAAa;YAqBb,aAAa;YASb,YAAY;YAUZ,YAAY;YAuBZ,YAAY;CAqB7B"}

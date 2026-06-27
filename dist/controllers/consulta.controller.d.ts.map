@@ -1,0 +1,1 @@
+{"version":3,"file":"consulta.controller.d.ts","sourceRoot":"","sources":["../../src/controllers/consulta.controller.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,MAAM,EAA+B,MAAM,SAAS,CAAC;AAK9D,qBAAa,kBAAkB;IACpB,MAAM,EAAE,MAAM,CAAC;IACtB,OAAO,CAAC,eAAe,CAAkB;;IAQzC,OAAO,CAAC,gBAAgB;YAQV,eAAe;YAsBf,eAAe;YAUf,cAAc;YAWd,cAAc;YAuBd,cAAc;CAqB/B"}
