@@ -1,33 +1,33 @@
-import express from "express";
-import cors from "cors";
-import sequelize from "./db.js";
-import router from "./controllers/index.js";
+import express from 'express';
+import cors from 'cors';
+import helmet from 'helmet';
+import dotenv from 'dotenv';
 
+import router from './controllers/index.controller.js';
+import { sequelize } from './models/index.js';
+
+dotenv.config({ path: '.env' });
 
 const app = express();
 
-// ✅ CORS CONFIGURADO
 app.use(cors({
-  origin: ["http://localhost:3000", "http://localhost:3001", "http://localhost:3002"],
-  credentials: true,
+  origin: "http://localhost:3000",
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type", "Authorization"],
 }));
-
+app.use(helmet());
 app.use(express.json());
 
-// Rotas
 app.use('/api', router);
 
-// Sincroniza os modelos com o banco (cria tabelas se não existirem)
-sequelize.sync({ force: false })
+sequelize.sync()
   .then(() => {
-    console.log('📊 Modelos sincronizados com o banco de dados');
+    console.log('Database connected and synced successfully.');
+
+    app.listen(process.env.PORT || 3001, () => {
+      console.log(`Server is running on port ${process.env.PORT || 3001}`);
+    });
   })
   .catch((err) => {
-    console.error('Erro ao sincronizar modelos:', err);
+    console.error('Unable to connect to the database:', err);
   });
-
-const PORT = process.env.PORT || 3001;
-
-app.listen(PORT, () => {
-  console.log(`Servidor rodando na porta ${PORT} 🚀`);
-});
