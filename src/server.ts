@@ -11,7 +11,7 @@ dotenv.config({ path: '.env' });
 const app = express();
 
 app.use(cors({
-  origin: "http://localhost:3000",
+  origin: "https://frontend-3p4u.vercel.app",
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"],
 }));
